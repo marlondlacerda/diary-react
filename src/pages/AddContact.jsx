@@ -20,7 +20,8 @@ class AddContact extends React.Component {
 
   onSubmitForm(event) {
     event.preventDefault();
-    const { list, handleSubmit } = this.props;
+
+    const { list, handleSubmit, history } = this.props;
     const {
       name, email, number, comentary,
     } = this.state;
@@ -71,8 +72,9 @@ class AddContact extends React.Component {
       number,
       comentary,
     };
-
-    return handleSubmit(data);
+    handleSubmit(data);
+    history.push('/');
+    return toast.success('Contato Adicionado com Sucesso!');
   }
 
   inputHandler({ target }) {
@@ -180,6 +182,9 @@ AddContact.propTypes = {
     number: PropTypes.string.isRequired,
     comentary: PropTypes.string,
   })).isRequired,
+  history: PropTypes.shape({
+    push: PropTypes.func.isRequired,
+  }).isRequired,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddContact);

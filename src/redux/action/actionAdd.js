@@ -4,5 +4,5 @@ const actionAdd = (payload) => ({
   type: ADD_CONTACT,
   payload,
 });
-console.log(actionAdd);
+
 export default actionAdd;
