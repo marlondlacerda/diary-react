@@ -5,7 +5,7 @@ const Home = () => (
   <div className="container">
     <div className="row">
       <div className="col-md-12 my-5 text-center">
-        <Link to="/adicionar" className="btn btn-outline-dark">
+        <Link to="/diary-react-with-redux/adicionar" className="btn btn-outline-dark">
           Adicionar Contato!
         </Link>
       </div>

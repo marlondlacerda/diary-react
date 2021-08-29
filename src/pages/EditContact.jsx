@@ -54,7 +54,7 @@ const EditContact = () => {
                 value="Atualizar Contato"
                 className="btn btn-dark"
               />
-              <Link to="/" className="btn btn-danger my-2 ms-3">
+              <Link to="/diary-react-with-redux/" className="btn btn-danger my-2 ms-3">
                 Cancelar
               </Link>
             </div>

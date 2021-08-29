@@ -155,7 +155,7 @@ class AddContact extends React.Component {
                   value="Adicionar Contato"
                   className="btn btn-block btn-dark"
                 />
-                <Link to="/" className="btn btn-danger my-2 ms-3">
+                <Link to="/diary-react-with-redux/" className="btn btn-danger my-2 ms-3">
                   Cancelar
                 </Link>
               </div>

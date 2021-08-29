@@ -6,10 +6,10 @@ const Navbar = () => (
     <nav className="navbar bg-dark navbar-dark">
       <ul className="nav nav-pills nav-fill">
         <li className="nav-item">
-          <Link className="navbar-brand ms-5" exact to="/">HOME</Link>
+          <Link className="navbar-brand ms-5" exact to="/diary-react-with-redux/">HOME</Link>
         </li>
         <li className="nav-item">
-          <Link className="navbar-brand ms-5" exact to="/adicionar">Adicionar Contato</Link>
+          <Link className="navbar-brand ms-5" exact to="/diary-react-with-redux/adicionar">Adicionar Contato</Link>
         </li>
       </ul>
     </nav>

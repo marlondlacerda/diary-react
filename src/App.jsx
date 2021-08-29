@@ -13,11 +13,11 @@ const App = () => (
     <ToastContainer />
     <Navbar />
     <Switch>
-      <Route exact path="/" component={() => <Home />} />
+      <Route exact path="/diary-react-with-redux/" component={() => <Home />} />
 
-      <Route path="/adicionar" component={AddContact} />
+      <Route path="/diary-react-with-redux/adicionar" component={AddContact} />
 
-      <Route path="/editar/:id">
+      <Route path="/diary-react-with-redux/editar/:id">
         <EditContact />
       </Route>
     </Switch>
