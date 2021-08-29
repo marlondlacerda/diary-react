@@ -9,11 +9,11 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import rootReducer from './redux/reducers';
 import reportWebVitals from './reportWebVitals';
-import App from './App.jsx';
+import App from './App';
+import contactReducer from './redux/reducers/contactReducer';
 
-const store = createStore(rootReducer, composeWithDevTools());
+const store = createStore(contactReducer, composeWithDevTools());
 
 ReactDOM.render(
   <React.StrictMode>
