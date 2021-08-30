@@ -73,7 +73,7 @@ class AddContact extends React.Component {
       comentary,
     };
     handleSubmit(data);
-    history.push('/');
+    history.push('/diary-react-with-redux/');
     return toast.success('Contato Adicionado com Sucesso!');
   }
 
